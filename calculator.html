@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+</head>
+
+<body class="conteiner">
+    <label for="first">Первое число:</label>
+    <input type="text" id="n1" name="first">
+    <label for="second">Второе число:</label>
+    <input type="text" id="n2" name="second">
+    <button class="button" onclick="Calculator.getSum(document.getElementById('n1').value, document.getElementById('n2').value);">+</button>
+    <button class="button" onclick="Calculator.getMinus(document.getElementById('n1').value, document.getElementById('n2').value);">-</button>
+    <button class="button" onclick="Calculator.getMultiply(document.getElementById('n1').value, document.getElementById('n2').value);">*</button>
+    <button class="button" onclick="Calculator.getDivision(document.getElementById('n1').value, document.getElementById('n2').value);">/</button>
+<hr>
+    <div id="out">Результат</div>
+    <script src="/assets/calculator.js">
+    </script>
+</body>
+</html>
