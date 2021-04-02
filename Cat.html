@@ -86,24 +86,7 @@
         <p><input type="file" /></p>
         <p><button type="submit" onclick="getCat();">Ок</button></p>
     </form>
-    <script>
-        function getCat() {
-            class Cat {
-                constructor(name, phone, email, breed, age) {
-                    this.name = name;
-                    this.phone = phone;
-                    this.email = email;
-                    this.breed = breed;
-                    this.age = age;
-                }
-            }
-            let cat = new Cat(document.getElementById('name').value, document.getElementById('phone').value, document
-                .getElementById('email').value, document.getElementById('select').value, document.getElementById(
-                    'age').value);
-
-            console.log(cat)
-        }
-    </script>
+    <script src="/assets/Cat.js"></script>
 </body>
 
 </html>
